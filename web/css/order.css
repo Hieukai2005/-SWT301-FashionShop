@@ -1,0 +1,381 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 21, 2026, 10:12:13 PM
+    Author     : dotha
+*/
+/* Container */
+.containerOD {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.item-price-old-OD {
+    font-size: 13px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: -900px;
+}
+
+.item-price-old-total-OD {
+    font-size: 13px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+/* Page Title */
+.page-titleOD {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+/* Tabs */
+.tabs-containerOD {
+    background: white;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.tabs-listOD {
+    display: flex;
+    gap: 0;
+    list-style: none;
+}
+
+.tab-itemOD {
+    flex: 1;
+    min-width: 150px;
+}
+
+.tab-btnOD {
+    width: 100%;
+    padding: 18px 20px;
+    border: none;
+    background: white;
+    font-size: 14px;
+    font-weight: 600;
+    color: #7f8c8d;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.tab-btnOD:hover {
+    color: #2c3e50;
+    background: #f8f9fa;
+}
+
+.tab-btnOD.activeOD {
+    color: #3498db;
+    border-bottom-color: #3498db;
+}
+
+/* Orders List */
+.orders-listOD {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Order Card */
+.order-cardOD {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.order-cardOD:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Order Header */
+.order-headerOD {
+    padding: 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.order-infoOD {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.order-idOD {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+.order-dateOD {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.order-statusOD {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.status-pendingOD {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-confirmedOD {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.status-shippingOD {
+    background: #cfe2ff;
+    color: #084298;
+}
+
+.status-completedOD {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-cancelledOD {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Order Body */
+.order-bodyOD {
+    padding: 20px;
+}
+
+/* Order Items */
+.order-itemsOD {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-itemOD {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.order-itemOD:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.item-imageOD {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.item-detailsOD {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-nameOD {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.item-variantOD {
+    font-size: 13px;
+    color: #7f8c8d;
+    margin-bottom: 8px;
+}
+
+.item-priceOD {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-amountOD {
+    font-weight: 600;
+    color: #e74c3c;
+    font-size: 16px;
+}
+
+.item-qtyOD {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* Order Footer */
+.order-footerOD {
+    padding: 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.total-sectionOD {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.total-labelOD {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.total-amountOD {
+    font-weight: 700;
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+.order-actionsOD {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-primaryOD {
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primaryOD:hover {
+    background: #2980b9;
+}
+
+.btn-secondaryOD {
+    padding: 10px 20px;
+    background: white;
+    color: #7f8c8d;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-secondaryOD:hover {
+    border-color: #3498db;
+    color: #3498db;
+}
+
+.btn-dangerOD {
+    padding: 10px 20px;
+    background: white;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-dangerOD:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+/* Empty State */
+.empty-stateOD {
+    background: white;
+    border-radius: 8px;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.empty-iconOD {
+    font-size: 64px;
+    color: #bdc3c7;
+    margin-bottom: 20px;
+}
+
+.empty-titleOD {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.empty-textOD {
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .order-headerOD {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-footerOD {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-actionsOD {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .btn-primaryOD,
+    .btn-secondaryOD,
+    .btn-dangerOD {
+        width: 100%;
+    }
+
+    .item-imageOD {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+}

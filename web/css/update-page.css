@@ -1,0 +1,230 @@
+:root {
+    --bg-light: #f8f9fa;
+    --primary-blue: #0d6efd;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: #1e293b;
+}
+
+/* Card Style */
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    background-color: #fff;
+}
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #edf2f7;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+/* Form Style */
+.form-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #64748b;
+}
+#description{
+    height: 225px;
+}
+
+.form-control, .form-select {
+    border-color: #e2e8f0;
+    padding: 0.6rem 0.75rem;
+}
+.form-control, .form-select {
+    border-color: #e2e8f0;
+    margin: 0;
+}
+.form-control .img{
+    border: 1px solid white;
+}
+#gd{
+    width: 55%;
+}
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+/* Table Style */
+.table thead th {
+    background-color: #f8fafc;
+    color: #64748b;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+    border-top: none;
+    padding: 1rem;
+}
+.table tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+    font-size: 0.875rem;
+}
+.variant-badge {
+    background-color: #f1f5f9;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+.color-preview {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    border: 1px solid #e2e8f0;
+}
+/*.*/
+.error-data{
+    border: 1px solid red;
+}
+.error-info {
+    display: block;
+    font-size: 0.7rem;
+    color: red;
+    margin: 0;
+}
+/*.*/
+.btn-update {
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+}
+.breadcrumb {
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+.section-title-icon {
+    vertical-align: middle;
+    margin-right: 8px;
+    color: var(--primary-blue);
+}
+
+.content-wrapper-custom {
+    padding: 2rem;
+}
+.dis{
+    visibility: hidden;
+    width: 50%;
+    margin-right: 5%;
+}
+.vis {
+    visibility: visible;
+}
+.gender {
+    width: 50%;
+    margin-right: 5%;
+}
+.discount{
+    width: 49%;
+}
+.active{
+    width: 49%;
+}
+.gendis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.is_sale:nth-last-of-type(1),
+.is_active:nth-last-of-type(1){
+    margin-left: 35px;
+}
+
+
+
+.cover{
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 99;
+    pointer-events: auto;
+    user-select: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/*.*/
+.action-iconDH {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+}
+
+.action-iconDH:hover {
+    transform: translateY(-2px);
+}
+
+.edit-iconDH {
+    background: #fff3e0;
+    color: #ff9800;
+}
+#operation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    height: 182.8px;
+}
+#deleteImages{
+    text-align: end; 
+}
+#imageDetails img{
+    width: 40%;
+    height: 150px;
+}
+.updatePopup {
+    min-width: 30%;
+    border-radius: 15px;
+    background: #f8f9fa;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 20px;
+    z-index: 1000;
+    transition: transform 0.4s, top 0.4s;
+    /* Thêm shadow để nổi bật trên nền contentDB */
+    visibility: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.frame label {
+    width: 200px;
+    margin: 5px 0;
+}
+#updateBtn {
+    margin: 25px 0 0 0;
+    width: 200px;
+}
+
+.details-info input{
+    width: 250px;
+    height: 30px;
+}
+.details-info input {
+    border-radius: 5px;
+    margin: 5px 0;
+    border: 0;
+}
+/*.img-variant{
+    
+}*/

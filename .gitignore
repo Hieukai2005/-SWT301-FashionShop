@@ -1,0 +1,19 @@
+# Created by https://www.toptal.com/developers/gitignore/api/netbeans
+
+### NetBeans ###
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+nbproject/private/
+nbproject/private.xml
+
+# Java compiled files
+*.class
+
+# Maven
+target/

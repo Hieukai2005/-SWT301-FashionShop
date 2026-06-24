@@ -1,0 +1,389 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 20, 2026, 11:05:40 AM
+    Author     : dotha
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --creamS: #f5f0e8;
+    --inkS: #1a1814;
+    --warm-midS: #8b7355;
+    --accentS: #c4a97a;
+    --light-lineS: #e2d9cc;
+    --table-headS: #2c2620;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--creamS);
+    color: var(--inkS);
+    min-height: 100vh;
+    padding: 60px 20px 100px;
+}
+
+.page-wrapS {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* ── Hero ── */
+.heroS {
+    text-align: center;
+    margin-bottom: 64px;
+    position: relative;
+}
+
+.heroS::before {
+    content: 'SIZE';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(80px, 20vw, 160px);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--light-lineS);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+}
+
+.heroS h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 5vw, 46px);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+.heroS p {
+    font-size: 13px;
+    color: var(--warm-midS);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+}
+
+.dividerS {
+    width: 48px;
+    height: 1px;
+    background: var(--accentS);
+    margin: 18px auto 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* ── Gender blocks ── */
+.gender-blockS {
+    margin-bottom: 72px;
+}
+
+.gender-titleS {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.gender-titleS h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--inkS);
+}
+
+.gender-titleS .lineS {
+    flex: 1;
+    height: 1px;
+    background: var(--light-lineS);
+}
+
+.gender-titleS .badge-labelS {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--warm-midS);
+    border: 1px solid var(--light-lineS);
+    padding: 4px 12px;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+/* ── Section ── */
+.sectionS {
+    margin-bottom: 40px;
+}
+
+.section-labelS {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.section-labelS h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.section-labelS .sub-lineS {
+    flex: 1;
+    height: 1px;
+    background: var(--light-lineS);
+}
+
+.unit-noteS {
+    font-size: 11px;
+    color: var(--warm-midS);
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+/* ── Table ── */
+.tbl-wrapS {
+    overflow-x: auto;
+    border-radius: 3px;
+    border: 1px solid var(--light-lineS);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 440px;
+    font-size: 13.5px;
+}
+
+thead tr {
+    background: var(--table-headS);
+    color: var(--creamS);
+}
+
+thead th {
+    padding: 13px 18px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    font-size: 13px;
+}
+
+thead th:first-child {
+    text-align: left;
+}
+
+.th-sS  {
+    background: #3a5a3a;
+}
+.th-mS  {
+    background: #2e3d5a;
+}
+.th-lS  {
+    background: #5a3a2e;
+}
+.th-xlS {
+    background: #4a2e4a;
+}
+
+tbody tr {
+    transition: background 0.15s;
+}
+tbody tr:nth-child(even) {
+    background: rgba(0,0,0,0.025);
+}
+tbody tr:hover {
+    background: rgba(196,169,122,0.12);
+}
+
+tbody td {
+    padding: 11px 18px;
+    text-align: center;
+    border-bottom: 1px solid var(--light-lineS);
+    color: var(--inkS);
+}
+
+tbody td:first-child {
+    text-align: left;
+    font-weight: 500;
+    color: var(--warm-midS);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ── Finder form ── */
+.finder-wrapS {
+    background: white;
+    border: 1px solid var(--light-lineS);
+    border-radius: 3px;
+    padding: 28px 32px;
+    margin-bottom: 40px;
+}
+
+.finder-wrapS h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    letter-spacing: 0.04em;
+}
+
+.finder-descS {
+    font-size: 13px;
+    color: var(--warm-midS);
+    margin-bottom: 22px;
+}
+
+.finder-formS {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 14px;
+    align-items: end;
+}
+
+@media (max-width: 560px) {
+    .finder-formS {
+        grid-template-columns: 1fr 1fr;
+    }
+    .finder-btnS  {
+        grid-column: 1 / -1;
+    }
+}
+
+.finder-fieldS label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--warm-midS);
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+
+.finder-fieldS input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--light-lineS);
+    border-radius: 2px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    background: var(--creamS);
+    color: var(--inkS);
+    outline: none;
+    transition: border 0.2s;
+}
+
+.finder-fieldS input:focus {
+    border-color: var(--accentS);
+}
+
+.finder-btnS {
+    background: var(--inkS);
+    color: var(--creamS);
+    border: none;
+    padding: 11px 28px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.finder-btnS:hover {
+    background: var(--warm-midS);
+}
+
+/* ── Tips ── */
+.tipsS {
+    background: var(--inkS);
+    color: var(--creamS);
+    padding: 28px 32px;
+    border-radius: 3px;
+}
+
+.tipsS h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    letter-spacing: 0.04em;
+    color: var(--accentS);
+}
+
+.tipsS ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tipsS ul li {
+    font-size: 13.5px;
+    padding: 5px 0 5px 18px;
+    position: relative;
+    color: rgba(245,240,232,0.85);
+    line-height: 1.6;
+}
+
+.tipsS ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accentS);
+}
+
+/* ── Separator ── */
+.block-sepS {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--accentS), transparent);
+    margin: 0 0 72px;
+}
+
+/* ── Animation ── */
+@keyframes fadeUpS {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to   {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gender-blockS:nth-child(1) {
+    animation: fadeUpS 0.5s ease both;
+}
+.gender-blockS:nth-child(3) {
+    animation: fadeUpS 0.5s ease 0.1s both;
+}
+.gender-blockS:nth-child(5) {
+    animation: fadeUpS 0.5s ease 0.2s both;
+}

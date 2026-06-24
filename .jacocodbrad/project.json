@@ -1,0 +1,161 @@
+{
+  "exclpkgs.listing" : { },
+  "pkgfltr.listing" : {
+    "fashionShop" : {
+      "Source Packages" : {
+        "" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_YES"
+        },
+        "ai" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.admin" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.admin.category" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.admin.customers" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.admin.general" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.admin.ordermanagement" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.admin.product" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.admin.productImage" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.admin.productVariant" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.admin.voucher" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.authentication" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.cart" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.order" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.product" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "controller.user" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "dal" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "filter" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "model" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        },
+        "utility" : {
+          "on" : true,
+          "isTst" : false,
+          "hasJava" : true,
+          "pfCvr" : "COVER_BY_PARENT"
+        }
+      },
+      "Test Packages" : {
+        "" : {
+          "on" : false,
+          "isTst" : true,
+          "hasJava" : false,
+          "pfCvr" : "COVER_YES"
+        }
+      }
+    }
+  },
+  "preferences" : {
+    "JaCoCoverage.ByReport.Project" : "true",
+    "JaCoCoverage.Editor.EnableCodeHighlighting" : "true",
+    "JaCoCoverage.Editor.EnableCodeHighlightingExtended" : "true",
+    "JaCoCoverage.Excl.Junit" : "true",
+    "JaCoCoverage.Excl.JunitExtension" : "true",
+    "JaCoCoverage.Excl.Testng" : "true",
+    "JaCoCoverage.Html.AutoOpenReport" : "true",
+    "JaCoCoverage.Html.EnableReport" : "true",
+    "JaCoCoverage.MergeOn" : "false",
+    "JaCoCoverage.NbConsole.EnableReport" : "true",
+    "JaCoCoverage.Prj.OverrideGlobals" : "true",
+    "JaCoCoverage.Retain.xml" : "false",
+    "JaCoCoverage.report.default.dir" : "true",
+    "JaCoCoverage.report.retain" : "3",
+    "JaCoCoverage.report.timestamp" : "false",
+    "JaCoCoverage.report.user.defined.dir" : "./.jacocodbrad/"
+  }
+}
